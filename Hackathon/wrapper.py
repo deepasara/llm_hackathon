@@ -15,7 +15,7 @@ from langchain.llms import OpenAI
 
 from PyPDF2 import PdfMerger
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'api_key'
 
 def merge_pdfs(folder_location, output_path):
     merger = PdfMerger()
