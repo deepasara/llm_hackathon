@@ -1,0 +1,56 @@
+/* styles.css */
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('/assets/pp.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.question-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+.question-container h1 {
+    color: black;
+}
+
+.question-input {
+    width: 70%;
+    margin: auto;
+}
+
+.btn-primary {
+    margin-top: 20px;
+}
+
+.answer-output {
+    color: black;
+    margin-top: 20px;
+}
+
+.answer-output {
+  position: relative;
+  overflow: hidden;
+}
+
+.answer-output::before {
+  content: "";
+  display: inline-block;
+  width: 0;
+  animation: typewriter-anim 4s steps(80) 1s forwards;
+}
+
+@keyframes typewriter-anim {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
